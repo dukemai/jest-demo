@@ -17,9 +17,9 @@ const PowerfulMockup = () => (
             <Title>
                 Powerful mocking library
             </Title>
-            <SubTitle>
+            <p className="content">
                 Powerful mocking library for functions and modules.
-            </SubTitle>       
+            </p>       
         </CardContent>    
     </Card>
 )

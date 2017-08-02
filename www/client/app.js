@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom';
 import { HashRouter, Route, browserHistory } from 'react-router-dom'
 
 import { Agenda, Intro, NavBar, TechnicalStacks, 
-    FirstPage, Remote, JestIntro, JestSetup } from './components';
+    FirstPage, Remote, JestIntro, JestSetup,
+    TestingAgainstDatabase, TestingAPI, TestingReact } from './components';
 import socket from './io';
 
 const App = () => (
@@ -19,6 +20,9 @@ const App = () => (
             <Route exact path="(/admin)?/technicalstacks/:scrollTo?" component={TechnicalStacks}/>
             <Route exact path="(/admin)?/jest" component={JestIntro}/>
             <Route exact path="(/admin)?/jest/setup" component={JestSetup}/>
+            <Route exact path="(/admin)?/jest/testing-against-database" component={TestingAgainstDatabase}/>
+            <Route exact path="(/admin)?/jest/testing-api" component={TestingAPI}/>
+            <Route exact path="(/admin)?/jest/testing-react" component={TestingReact}/>
         </div>  
     </HashRouter>  
 )

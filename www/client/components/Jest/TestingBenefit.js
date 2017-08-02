@@ -20,7 +20,7 @@ const TestingBenefit = () => (
             <SubTitle>
                 it is no doubt that having tests brings a lot of benefits.
             </SubTitle>
-            <p className="content">
+            <div className="content">
                 <ul>
                     <li>
                         Ensure the chains of the app logic when making changes.
@@ -35,7 +35,7 @@ const TestingBenefit = () => (
                         Code logic is securer when delivering.
                     </li>    
                 </ul>    
-            </p>    
+            </div>    
         </CardContent>    
     </Card>
 )

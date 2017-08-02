@@ -7,5 +7,5 @@ export { default as Remote } from './Remote';
 export { default as Eslint } from './Eslint';
 export { default as Express } from './Express';
 export { default as Webpack } from './Webpack';
-export { JestIntro, JestSetup } from './Jest';
+export { JestIntro, JestSetup, TestingAgainstDatabase, TestingAPI, TestingReact } from './Jest';
 

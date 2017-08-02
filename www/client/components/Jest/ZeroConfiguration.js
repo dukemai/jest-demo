@@ -17,9 +17,9 @@ const ZeroConfiguration = () => (
             <Title>
                 Zero configuration testing platform
             </Title>
-            <SubTitle>
+            <p className="content">
                 Place tests in a __tests__ folder, or name your test files with a .spec.js or .test.js extension. 
-            </SubTitle>       
+            </p>       
         </CardContent>    
     </Card>
 )

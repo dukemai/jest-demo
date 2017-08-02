@@ -10,8 +10,16 @@ const defaultProps = {
 
 }
 
+const basicUsage = `test('name of test suite', () => {
+});
+describe('group of related test suites', () => {
+});`
 const content = (
     <div className="installation">
+        basic usage
+        <pre>
+            {basicUsage}
+        </pre>
         validHelper.js
         <pre>
             {

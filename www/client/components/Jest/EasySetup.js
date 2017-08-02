@@ -17,9 +17,9 @@ const EasySetup = () => (
             <Title>
                 Easy Setup
             </Title>
-            <SubTitle>
+            <p className="content">
                 Complete and easy to set-up JavaScript testing solution. Works out of the box for any React project.
-            </SubTitle>       
+            </p>       
         </CardContent>    
     </Card>
 )

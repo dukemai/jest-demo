@@ -54,9 +54,9 @@ class NavBar extends React.Component {
                             
                             <NavBarItem text="Jest" link="/Jest" />
                             <NavBarItem text="Setup and simple demo" link="/jest/setup" />
-                            <NavBarItem text="Test against database" link="/jest/test-against-database" />
-                            <NavBarItem text="Test APIs" link="/jest/test-api" />
-                            <NavBarItem text="Test React" link="/jest/test-react" />
+                            <NavBarItem text="Test against database" link="/jest/testing-against-database" />
+                            <NavBarItem text="Test APIs" link="/jest/testing-api" />
+                            <NavBarItem text="Test React" link="/jest/testing-react" />
 
                             <hr className="navbar-divider" />
                             <NavBarItem text="The End" link="/End" />
