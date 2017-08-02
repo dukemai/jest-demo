@@ -1,0 +1,8 @@
+.express-box{
+    .image{
+        overflow: hidden;
+        & img{
+            margin-top: 20px;
+        }
+    }
+}

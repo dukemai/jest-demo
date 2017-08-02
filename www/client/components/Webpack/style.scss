@@ -1,0 +1,10 @@
+.webpack-box{
+    .image{
+        background: #2B3A42;
+        overflow: hidden;
+
+        & img{
+            margin-top: 20px;
+        }
+    }
+}
