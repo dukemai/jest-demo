@@ -22,8 +22,8 @@ const TestingReact = () => (
                     </Title>
                     <SubTitle>
                        Jest is so easy to setup. By default, jest will look for *.test.* files.
-                       <Link className="is-pulled-right button is-primary is-inverted is-outlined" to={'/jest/testing-against-database'}>
-                            Testing against database
+                       <Link className="is-pulled-right button is-primary is-inverted is-outlined" to={'/the-end'}>
+                            The End
                         </Link>
                     </SubTitle>        
                 </div>    

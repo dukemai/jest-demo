@@ -81,11 +81,28 @@ const Agenda = () => (
                 <li>
                     Jest in action
                     <ul>
-                        <li>Testing against databases</li>
-                        <li>Testing APIs</li>                        
-                        <li>Testing React</li>
+                        <li>
+                            <Link to="/Jest/testing-against-database">
+                                Testing against databases
+                            </Link>    
+                        </li>
+                        <li>
+                            <Link to="/Jest/testing-api">
+                                Testing APIs
+                            </Link>
+                        </li>                        
+                        <li>
+                            <Link to="/Jest/testing-react">
+                                Testing React
+                            </Link>
+                        </li>
                     </ul>
-                </li>    
+                </li>
+                 <li>
+                    <Link to="/the-end">
+                        The End
+                    </Link>
+                </li>   
             </ul>        
         </div>
         <Footer />      

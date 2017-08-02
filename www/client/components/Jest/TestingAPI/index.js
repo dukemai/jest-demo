@@ -22,7 +22,7 @@ const TestingAPI = () => (
                     </Title>
                     <SubTitle>
                        Supertest is a strong mocking library for testing requests.
-                       <Link className="is-pulled-right button is-primary is-inverted is-outlined" to={'/jest/testing-against-database'}>
+                       <Link className="is-pulled-right button is-primary is-inverted is-outlined" to={'/jest/testing-react'}>
                             Testing React
                         </Link>
                     </SubTitle>        

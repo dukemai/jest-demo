@@ -59,7 +59,7 @@ class NavBar extends React.Component {
                             <NavBarItem text="Test React" link="/jest/testing-react" />
 
                             <hr className="navbar-divider" />
-                            <NavBarItem text="The End" link="/End" />
+                            <NavBarItem text="The End" link="/the-end" />
                         </div>
                     </div>
                 </div>  

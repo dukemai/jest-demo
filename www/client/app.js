@@ -4,7 +4,7 @@ import { HashRouter, Route, browserHistory } from 'react-router-dom'
 
 import { Agenda, Intro, NavBar, TechnicalStacks, 
     FirstPage, Remote, JestIntro, JestSetup,
-    TestingAgainstDatabase, TestingAPI, TestingReact } from './components';
+    TestingAgainstDatabase, TestingAPI, TestingReact, TheEnd } from './components';
 import socket from './io';
 
 const App = () => (
@@ -23,12 +23,12 @@ const App = () => (
             <Route exact path="(/admin)?/jest/testing-against-database" component={TestingAgainstDatabase}/>
             <Route exact path="(/admin)?/jest/testing-api" component={TestingAPI}/>
             <Route exact path="(/admin)?/jest/testing-react" component={TestingReact}/>
+            <Route exact path="(/admin)?/the-end" component={TheEnd}/>
         </div>  
     </HashRouter>  
 )
 
 socket.on('remote-command', function (data) {
-    console.log(data);
     window.location.hash = `/${data.action}`;
 });
 
