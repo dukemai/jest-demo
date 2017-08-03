@@ -2,7 +2,9 @@ import React from 'react';
 
 import { Link } from 'react-router-dom';
 import { Hero, Title, SubTitle, NavBar, Card, CardContent, Section } from '../../share';
-
+import Enzyme from './Enzyme';
+import ReduxTesting from './ReduxTesting';
+import Tips from './Tips';
 
 const propTypes = {
 
@@ -18,10 +20,10 @@ const TestingReact = () => (
             <div className="columns is-vcentered">
                 <div className="column">
                     <Title>
-                        Setup Jest
+                        Testing React
                     </Title>
                     <SubTitle>
-                       Jest is so easy to setup. By default, jest will look for *.test.* files.
+                       Jest is designed to test any React Project.
                        <Link className="is-pulled-right button is-primary is-inverted is-outlined" to={'/the-end'}>
                             The End
                         </Link>
@@ -30,12 +32,9 @@ const TestingReact = () => (
             </div>    
         </Hero>
         <Section>
-            <div className="columns">
-                <div className="column is-half">
-                </div>
-                <div className="column is-half">
-                </div>
-            </div>
+            <Enzyme />
+            <ReduxTesting />
+            <Tips />
         </Section>   
     </div> 
 )
