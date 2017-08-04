@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Link } from 'react-router-dom';
-import { Hero, Title, SubTitle, NavBar, Card, CardContent, Section } from '../../share';
+import { Hero, Title, SubTitle, NavBar, Card, CardContent, Section, Footer } from '../../share';
 import Installation from './Installation';
 import SimpleDemo from './SimpleDemo';
 import Notes from './Notes';
@@ -43,7 +43,17 @@ const JestSetup = () => (
                 </div>
             </div>
             <SimpleDemo />
-        </Section>   
+        </Section>
+        <Footer
+            previousNode={{
+                text: 'Jest Introduction',
+                url: '/jest'
+            }}
+            nextNode={{
+                text: 'Testing against database',
+                url: '/jest/testing-against-database'
+            }}
+        />
     </div> 
 )
 

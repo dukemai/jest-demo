@@ -105,7 +105,16 @@ const Agenda = () => (
                 </li>   
             </ul>        
         </div>
-        <Footer />      
+        <Footer 
+            nextNode={{
+                text: 'Technical Stacks',
+                url: '/TechnicalStacks'
+            }}
+            previousNode={{
+                text: 'First Page',
+                url: '/'
+            }} 
+        />      
     </div>    
 )
 

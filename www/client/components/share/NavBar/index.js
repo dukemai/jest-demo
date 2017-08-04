@@ -38,7 +38,6 @@ class NavBar extends React.Component {
                         </a>
                         <div className="navbar-dropdown">
                             <NavBarItem text="Start" link="/" />
-                            <NavBarItem text="Intro" link="/Intro" />
                             <NavBarItem text="Agenda" link="/Agenda" />
                             
                             <hr className="navbar-divider" />

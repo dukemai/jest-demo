@@ -93,7 +93,7 @@ class TechnicalStacks extends React.Component{
                         <SubTitle>
                             A typical suite when developing NodeJS Web Applications
                             <Link className="is-pulled-right button is-primary is-inverted is-outlined" to={'/Jest'}>
-                                Jest
+                                Jest Introduction
                             </Link>
                         </SubTitle>
                     </div>    
@@ -126,7 +126,16 @@ class TechnicalStacks extends React.Component{
                     </div>        
                 </div>    
             </Section>    
-            <Footer />      
+            <Footer 
+                nextNode={{
+                    text: 'Jest Introduction',
+                    url: '/Jest'
+                }}
+                previousNode={{
+                    text: 'Agenda',
+                    url: '/Agenda'
+                }}
+            />      
       </div>) 
     }
 }

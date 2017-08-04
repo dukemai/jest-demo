@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Link } from 'react-router-dom';
-import { Hero, Title, SubTitle, NavBar, Card, CardContent, Section } from '../../share';
+import { Hero, Title, SubTitle, NavBar, Card, CardContent, Section, Footer } from '../../share';
 
 import Solution1 from './Solution1';
 import Solution2 from './Solution2';
@@ -36,7 +36,17 @@ const TestingAgainstDatabase = () => (
         <Section>
             <Solution1 />
             <Solution2 />
-        </Section>   
+        </Section>
+        <Footer
+            previousNode={{
+                text: 'Setup and demo',
+                url: '/jest/setup'
+            }}
+            nextNode={{
+                text: 'Testing API',
+                url: '/jest/testing-api'
+            }}
+        />
     </div> 
 )
 

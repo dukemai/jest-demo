@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Link } from 'react-router-dom';
-import { Hero, Title, SubTitle, NavBar, Card, CardContent, Section } from '../../share';
+import { Hero, Title, SubTitle, NavBar, Card, CardContent, Section, Footer } from '../../share';
 import Enzyme from './Enzyme';
 import ReduxTesting from './ReduxTesting';
 import Tips from './Tips';
@@ -35,7 +35,17 @@ const TestingReact = () => (
             <Enzyme />
             <ReduxTesting />
             <Tips />
-        </Section>   
+        </Section>
+        <Footer
+            nextNode={{
+                text: 'The End!!!',
+                url: '/the-end'
+            }}
+            previousNode={{
+                text: 'Testing API',
+                url: '/jest/testing-api'
+            }}
+        /> 
     </div> 
 )
 

@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Link } from 'react-router-dom';
-import { Hero, Title, SubTitle, NavBar, Card, CardContent, Section } from '../../share';
+import { Hero, Title, SubTitle, NavBar, Card, CardContent, Section, Footer } from '../../share';
 import SuperTest from './SuperTest';
 
 const propTypes = {
@@ -31,7 +31,17 @@ const TestingAPI = () => (
         </Hero>
         <Section>
             <SuperTest />
-        </Section>   
+        </Section>
+        <Footer
+            nextNode={{
+                text: 'Testing React',
+                url: '/jest/testing-react'
+            }}
+            previousNode={{
+                text: 'Testing against database',
+                url: '/jest/testing-against-database'
+            }}
+        />  
     </div> 
 )
 

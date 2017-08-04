@@ -1,7 +1,9 @@
 import React from 'react';
-
 import { Link } from 'react-router-dom';
-import { Hero, Title, SubTitle, NavBar } from '../share';
+
+import { Hero, Title, SubTitle, NavBar, Footer } from '../share';
+import Intro from '../Intro';
+
 import './style.scss';
 
 const propTypes = {
@@ -22,13 +24,17 @@ const FirstPage = () => (
                     </Title>
                     <SubTitle>
                         A presentation by <span className="credit"> Duc Mai </span>
-                        <Link className="is-pulled-right button is-primary is-inverted is-outlined" to={'/Intro'}>
-                            Intro
-                        </Link>
-                    </SubTitle>        
+                    </SubTitle>
                 </div>    
             </div>    
-        </Hero>    
+        </Hero>   
+        <Intro />
+        <Footer
+            nextNode={{
+                text: 'Agenda',
+                url: '/Agenda'
+            }} 
+        />
     </div> 
 )
 

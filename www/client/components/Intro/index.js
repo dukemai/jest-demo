@@ -21,21 +21,6 @@ const thumbnail = <Avatar />;
 const authorCredit = <AuthorCredit />;
 const Intro = () => (
     <div className="intro">
-        <Hero>
-            <div className="columns is-vcentered">
-                <div className="column">
-                    <Title>
-                        Short Intro
-                    </Title>
-                    <SubTitle>
-                        the project showcase used in this presentation
-                        <Link className="is-pulled-right button is-primary is-inverted is-outlined" to={'/Agenda'}>
-                            Agenda
-                        </Link>    
-                    </SubTitle>    
-                </div>    
-            </div>    
-        </Hero>
         <Section>
             <SubSectionTitle text="#BNP #React #NodeJS #Episerver" />  
             <div className="columns">
@@ -49,7 +34,8 @@ const Intro = () => (
                         </CardContent>    
                     </Card>    
                 </div>      
-                <div className="column content">  
+                <div className="column content">
+                    <strong>Short Intro</strong>
                     <p>
                         <span className="tag is-info">
                             Purpose

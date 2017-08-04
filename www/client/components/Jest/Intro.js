@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Link } from 'react-router-dom';
-import { Hero, Title, SubTitle, NavBar, Card, CardContent, Section } from '../share';
+import { Hero, Title, SubTitle, NavBar, Card, CardContent, Section, Footer } from '../share';
 import EasySetup from './EasySetup';
 import ZeroConfiguration from './ZeroConfiguration';
 import PowerfulMockup from './PowerfulMockup';
@@ -44,7 +44,17 @@ const JestIntro = () => (
                     <PowerfulMockup />
                 </div>
             </div>
-        </Section>   
+        </Section>
+        <Footer
+            nextNode={{
+                text: 'Setup and demo',
+                url: '/jest/setup'
+            }}
+            previousNode={{
+                text: 'Technical Stacks',
+                url: '/TechnicalStacks'
+            }}
+        /> 
     </div> 
 )
 
