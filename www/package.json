@@ -5,7 +5,8 @@
   "scripts": {
     "start": "node ./bin/www",
     "start-dev": "NODE_ENV=development PORT=5000 nodemon ./bin/www --exec babel-node",
-    "build-dev": "set NODE_ENV=development && webpack"
+    "build-dev": "set NODE_ENV=development && webpack",
+    "build": "NODE_ENV=PRODUCTION & webpack"
   },
   "dependencies": {
     "body-parser": "~1.17.1",

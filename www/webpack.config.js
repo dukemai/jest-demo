@@ -1,11 +1,15 @@
 const path = require('path');
+const webpack = require('webpack');
 
 const clientFolder = path.join(__dirname, 'client');
 
 module.exports = {
-  entry: './client/app.js',
+  entry: {
+    bundle: './client/app.js',
+    vendor: ['react', 'react-dom', 'scroll-to', 'socket.io-client']
+  },
   output: {
-    filename: 'bundle.js',
+    filename: '[name].js',
     path: path.resolve(__dirname, 'public/javascripts/')
   },
   module: {
@@ -28,6 +32,12 @@ module.exports = {
       },
     ],
   },
+  plugins: [
+     new webpack.optimize.CommonsChunkPlugin({
+      name: 'vendor',
+      filename: 'vendor.js',
+    }),
+  ],
   devtool: 'inline-source-map',
   devServer: {
     contentBase: './javascripts/',
