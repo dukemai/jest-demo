@@ -33,10 +33,12 @@ module.exports = {
     ],
   },
   plugins: [
-     new webpack.optimize.CommonsChunkPlugin({
+    new webpack.optimize.UglifyJsPlugin({
+    }),
+    new webpack.optimize.CommonsChunkPlugin({
       name: 'vendor',
       filename: 'vendor.js',
-    }),
+    }),   
   ],
   devtool: 'inline-source-map',
   devServer: {
