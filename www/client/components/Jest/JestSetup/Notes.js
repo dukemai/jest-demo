@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Box } from '../../share';
+import { Box, Anchor } from '../../share';
 
 const propTypes = {
 
@@ -12,6 +12,8 @@ const defaultProps = {
 
 const content = (
     <div className="installation">
+        <Anchor name="Notes" />
+        
         Few notes to share
         <ul>
             <li>

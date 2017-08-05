@@ -1,7 +1,9 @@
 import React from 'react';
+import { Route } from 'react-router-dom';
 
 import Brand from '../Brand';
 import NavBarItem from './NavBarItem';
+import Remote from './Remote';
 
 const propTypes = {
 
@@ -61,7 +63,8 @@ class NavBar extends React.Component {
                             <NavBarItem text="The End" link="/the-end" />
                         </div>
                     </div>
-                </div>  
+                    <Route path="/admin" component={Remote}/>
+                </div> 
             </nav>
         )
     }

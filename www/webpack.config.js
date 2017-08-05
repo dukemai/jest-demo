@@ -6,7 +6,7 @@ const clientFolder = path.join(__dirname, 'client');
 module.exports = {
   entry: {
     bundle: './client/app.js',
-    vendor: ['react', 'react-dom', 'scroll-to', 'socket.io-client']
+    vendor: ['react', 'react-dom', 'scroll-to', 'socket.io-client', 'query-string']
   },
   output: {
     filename: '[name].js',

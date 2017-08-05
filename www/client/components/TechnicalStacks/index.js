@@ -83,7 +83,8 @@ class TechnicalStacks extends React.Component{
         }
     }
     render() {
-      return (<div className="technical-stacks">
+      return (
+      <div className="technical-stacks">
             <Hero>
                 <div className="columns is-vcentered">
                     <div className="column">

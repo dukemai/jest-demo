@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { HashRouter, Route, browserHistory, Link } from 'react-router-dom'
 
 import { Agenda, Intro, NavBar, TechnicalStacks, 
-    FirstPage, Remote, JestIntro, JestSetup,
+    FirstPage, JestIntro, JestSetup,
     TestingAgainstDatabase, TestingAPI, TestingReact, TheEnd } from './components';
 import socket from './io';
 
@@ -12,8 +12,7 @@ import './style.scss';
 const App = () => (
     <HashRouter>
         <div className="app">
-            <div className="app-container">
-                <Route path="/admin" component={Remote}/>  
+            <div className="app-container">  
                 <div className="container">
                     <NavBar />
                 </div>
@@ -27,13 +26,18 @@ const App = () => (
                 <Route exact path="(/admin)?/jest/testing-api" component={TestingAPI}/>
                 <Route exact path="(/admin)?/jest/testing-react" component={TestingReact}/>
                 <Route exact path="(/admin)?/the-end" component={TheEnd}/>
-            </div>    
+            </div>
         </div>  
     </HashRouter>  
 )
 
 socket.on('remote-command', function (data) {
-    window.location.hash = `/${data.action}`;
+    if(data.action == 'scroll-top') {
+        scrollTo(0, 0);
+    } else {
+        window.location.hash = `/${data.action}`;
+        scrollTo(0, 0);
+    }
 });
 
 ReactDOM.render(<App/>, document.getElementById('mainContent'));

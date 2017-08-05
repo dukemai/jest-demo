@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Box } from '../../share';
+import { Box, Anchor } from '../../share';
 
 const propTypes = {
 
@@ -16,6 +16,7 @@ dotenv.load();`;
 const content = (
     <div className="columns">
         <div className="column is-half">
+            <Anchor name="Solution2" />
             #Solution 2:
             Setup a separate database for testing
             <pre>

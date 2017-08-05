@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Box } from '../../share';
+import { Box, Anchor } from '../../share';
 
 const propTypes = {
 
@@ -13,6 +13,7 @@ const defaultProps = {
 const content = (
     <div className="columns">
         <div className="column is-half">
+            <Anchor name="Solution1" />
             #Solution 1:
             Mockup mongoose by using Mockgoose
             <pre>

@@ -5,6 +5,7 @@ import { withRouter } from 'react-router-dom';
 import { Hero, Title, SubTitle, NavBar, Section,
         SubSectionTitle } from '../share';
 import socket from '../../io';
+import './style.scss';
 
 const propTypes = {
     children: PropTypes.node,
@@ -20,12 +21,14 @@ const defaultProps = {
 
 const goTo = (action, history) => {
     socket.emit('send-command', { action });
-    history.push(`/admin/${action}`)
+    if(history) {
+        history.push(`/admin/${action}`);
+    }
 }
 
 const Remote = ({ children, history }) => (
-    <div>
-        <ul className="navbar-menu">
+    <div className="side-bar">
+        <ul>
             <li className="navbar-item">
                 <a onClick={() => goTo('', history)}>First Page</a>
             </li>
@@ -51,18 +54,32 @@ const Remote = ({ children, history }) => (
                 <a onClick={() => goTo('TechnicalStacks/Webpack', history)}>Webpack</a>
             </li>    
         </ul>
-        <ul className="navbar-menu">
+        <ul>
             <li className="navbar-item">
                 <a onClick={() => goTo('Jest', history)}>Jest Introduction</a>
             </li>
             <li className="navbar-item">
                 <a onClick={() => goTo('Jest/setup', history)}>Jest Setup</a>
+                <ul>
+                    <li className="navbar-item">
+                        <a onClick={() => goTo('Jest/setup?scrollTo=Installation')}>Installation</a>
+                    </li>
+                </ul>    
             </li>
             <li className="navbar-item">
                 <a onClick={() => goTo('Jest/testing-against-database', history)}>Test Database</a>
             </li>
             <li className="navbar-item">
                 <a onClick={() => goTo('Jest/testing-api', history)}>Test API</a>
+            </li>
+            <li className="navbar-item">
+                <a onClick={() => goTo('Jest/testing-react', history)}>Test React</a>
+            </li>
+            <li className="navbar-item">
+                <a onClick={() => goTo('the-end', history)}>The End</a>
+            </li>
+            <li className="navbar-item">
+                <a onClick={() => goTo('scroll-top')}>Scroll Top</a>
             </li>
         </ul>    
     </div>

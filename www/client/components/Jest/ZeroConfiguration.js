@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Link } from 'react-router-dom';
-import { Hero, Title, SubTitle, NavBar, Card, CardContent } from '../share';
+import { Hero, Title, SubTitle, NavBar, Card, CardContent, Anchor } from '../share';
 
 const propTypes = {
 
@@ -13,6 +13,7 @@ const defaultProps = {
 
 const ZeroConfiguration = () => (
     <Card>
+        <Anchor name="ZeroConfiguration" />
         <CardContent>
             <Title>
                 Zero configuration testing platform

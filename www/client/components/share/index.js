@@ -7,3 +7,5 @@ export { default as Footer } from './Footer';
 export { default as Section, SectionTitle, SubSectionTitle } from './Section';
 export { default as Card, CardImage, CardContent, CardMediaContent } from './Card';
 export { default as Box } from './Box';
+export { default as Anchor } from './Anchor';
+

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Box } from '../../share';
+import { Box, Anchor } from '../../share';
 
 const propTypes = {
 
@@ -16,6 +16,7 @@ describe('group of related test suites', () => {
 });`
 const content = (
     <div className="installation">
+        <Anchor name="SimpleDemo" />
         basic usage
         <pre>
             {basicUsage}
