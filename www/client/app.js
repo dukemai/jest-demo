@@ -5,6 +5,7 @@ import { HashRouter, Route, browserHistory, Link } from 'react-router-dom'
 import { Agenda, Intro, NavBar, TechnicalStacks, 
     FirstPage, JestIntro, JestSetup,
     TestingAgainstDatabase, TestingAPI, TestingReact, TheEnd } from './components';
+import { scrollUp, scrollDown } from './utilities';
 import socket from './io';
 
 import './style.scss';
@@ -32,8 +33,13 @@ const App = () => (
 )
 
 socket.on('remote-command', function (data) {
+    console.log(data.action);
     if(data.action == 'scroll-top') {
         scrollTo(0, 0);
+    } else if(data.action == 'scroll-up') {
+        scrollUp();
+    } else if(data.action == 'scroll-down') {
+        scrollDown();
     } else {
         window.location.hash = `/${data.action}`;
         scrollTo(0, 0);

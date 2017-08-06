@@ -4,6 +4,8 @@ import { withRouter } from 'react-router-dom';
 
 import RemoteItem from './RemoteItem';
 import socket from '../../../io';
+import remoteSend from './utilities';
+
 
 const propTypes = {
     children: PropTypes.node,
@@ -18,7 +20,7 @@ const defaultProps = {
 }
 
 const goTo = (action, history) => {
-    socket.emit('send-command', { action });
+    remoteSend(action);
     if(history) {
         history.push(`/admin/${action}`);
     }
@@ -89,7 +91,7 @@ class Remote extends React.Component{
                     <hr className="navbar-divider" />
                     <RemoteItem text="The End" itemClicked={this.goTo} link="the-end" />
                 </div>
-            </div>  
+            </div>
         )
     }
 }  

@@ -4,6 +4,8 @@ import { Route } from 'react-router-dom';
 import Brand from '../Brand';
 import NavBarItem from './NavBarItem';
 import Remote from './Remote';
+import ScrollButtons from './ScrollButtons';
+
 
 const propTypes = {
 
@@ -64,6 +66,7 @@ class NavBar extends React.Component {
                         </div>
                     </div>
                     <Route path="/admin" component={Remote}/>
+                    <Route path="/admin" component={ScrollButtons}/>
                 </div> 
             </nav>
         )
